@@ -1,96 +1,100 @@
-.Encabezado {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(5, 6, 6);
-    font-family: 'Times New Roman', Times, serif;
-    height: 100px;
-    animation: cambio-color 2s infinite;
-}
+* {
+    padding: 0;
+    margin: 0;
+    
 
-@keyframes cambio-color {
-    0% {
-        color: #ff0000;
-        /* rojo */
-    }
-
-    50% {
-        color: #00ff00;
-        /* verde */
-    }
-
-    100% {
-        color: #0000ff;
-        /* azul */
-    }
-}
-
-.contenedorImagen {
-
-    display: flex;
+.Titulo {
     text-align: center;
-    background-color: rgb(28, 16, 74);
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    background-color: gainsboro;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
 
 }
 
-.contenedorTexto {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+nav li {
+
+    display: inline-flex;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(69, 65, 65);
+    padding: 10px;
+    width: 150px;
+}
+
+nav li:hover {
+    background-color: black;
+
+}
+
+.Kevin {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+
+}
+
+.Nadar{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+
+}
+
+.Contenido {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* ajusta el alto del div */
-    width: 100vw;
-    /* ajusta el ancho del div */
+    margin: 60px;
 
 }
 
-.tituloNombre {
-    color: blueviolet;
-    animation: desplazar 2s forwards;
-    position: relative;
-  }
-  
+.Articulo {
+    width: 80%;
+    border-right: 3px solid black;
+}
+
+.Secciones {
+    display: flex;
+    align-items: center;
+}
+.Hobby {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.Frase{
+    text-align: center;
+}
+.Frase p
+{
+    padding: 20px;
+}
  
 
 
-.textoNombre {
-    color: rgb(143, 110, 71);
-}
 
-.tituloQuien {
-    color: blueviolet;
-    animation: desplazar 2s forwards;
-    position: relative;
-}
-
-.textoQuien {
-    color: rgb(143, 110, 71);
-}
-
-.tituloHobby {
-    color: blueviolet;
-    animation: desplazar 2s forwards;
-    position: relative;
-}
-
-.textoHobby {
-    color: rgb(143, 110, 71);
-}
-
-@keyframes desplazar {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
 
 .piePagina {
-    background-color: rgb(132, 91, 38);
     text-align: center;
-    display: flex;
-    font-family: 'Times New Roman', Times, serif;
-    height: 50px;
-    width: auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.KevinSecundario
+{
+    color: aqua;
 }
