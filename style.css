@@ -98,3 +98,16 @@ nav li:hover {
 {
     color: aqua;
 }
+
+.botonClick{
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+
