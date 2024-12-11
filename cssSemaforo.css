@@ -1,4 +1,14 @@
-.custom-center {
-    display: flex;
-    justify-content: center;
+  /* Estilos para el semáforo */
+  .foco {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    /* Color apagado */
+}
+
+.foco.encendido {
+    color: white;
+    /* Texto blanco para el foco encendido */
 }
