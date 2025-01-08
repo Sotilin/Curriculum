@@ -4,71 +4,101 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>NewTube</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
-
-
 </head>
 
-<body class="p-3 mb-2 bg-black text-white">
-
-    <div>
-        <h1>
-            <img src="images.png" class="imagen">
-            <h1>NewTube</h1>
-        </h1>
-    </div>
-    <!-- Repoductor multimedia-->
-
-    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(223, 243, 243);">
-        Video</h1>
-    <div class="repoductorVideo">
+<body class="bg-black text-white p-3">
 
 
-        <video width="200" controls>
-            <source src="mov_bbb.mp4" type="video/mp4">
-            <source src="WhatsApp Video 2025-01-06 at 6.11.24 PM.mp4" type="video/mp4">
-            <source src="WhatsApp Video 2025-01-06 at 6.11.24 PM.ogg" type="video/ogg">
-            Your browser does not support HTML video.
-        </video>
-        <!--Reproductor Audio-->
+    <header class="bg-dark text-center text-white">
 
-        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(223, 243, 243);">
-            Audio</h1>
+        <head>
+            <!-- Titulo-->
+            <h1 class="card-header"> Contenido Multimedia </h1>
 
-        <div class="reproductorMusical">
+        </head>
 
+        <div style="margin-top: 3%;">
+            <div class="row d-flex justify-content-center">
 
-            <audio controls>
-                <source src="La Vaca Lola - Canciones de La Granja de Zenón 2.ogg" type="audio/ogg">
-                <source src="La Vaca Lola - Canciones de La Granja de Zenón 2.ogg" type="audio/ogg">
-                <source src="La Vaca Lola - Canciones de La Granja de Zenón 2.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+                <div class="col-sm-6">
+                    <img src="images.png">
+                    <img src="html.png">
+                </div>
+
+                
+            </div>
         </div>
 
+        <div>
+
+            <p class="alert alert-secondary" role="alert" style="margin-top: 10%;">
+
+                Si eres un desarrollador web, es probable que sepas que HTML5 es una de las tecnologías más utilizadas
+                para crear páginas web. Con HTML5, puedes utilizar una amplia variedad de etiquetas para insertar y
+                controlar contenido multimedia en tus páginas web. En este post, exploraremos las etiquetas multimedia
+                de HTML5 y cómo puedes utilizarlas para crear contenido atractivo y dinámico en tu sitio web. Desde
+                imágenes hasta audio y video, descubrirás cómo utilizar estas etiquetas para mejorar la experiencia del
+                usuario y hacer que tu sitio web destaque. ¡Así que prepárate para sumergirte en el mundo multimedia de
+                HTML5!
+            </p>
+
+        </div>
+
+    </header>
 
 
+    <div class="mb-4" style="margin-top: 10%;">
+        <h2 style="text-align: center;font-size: 50px;">Video</h2>
 
+        <div class="alert alert-light" role="alert">
+            <p style="margin-top: 45px;">
 
+                La etiqueta video un elemento de HTML5 utilizado para incrustar videos en una página web. A
+                continuación, se explican sus características y cómo se utiliza.
+
+            </p>
+        </div>
+
+        <div class="d-flex justify-content-center">
+
+            <video class="w-30" controls>
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="WhatsApp Video 2025-01-06 at 6.11.24 PM.mp4" type="video/mp4">
+                <source src="WhatsApp Video 2025-01-06 at 6.11.24 PM.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+
+        </div>
 
     </div>
 
-    <select class="comboBox" style="width: 200px; height: 50px; font-size: 16px;">
-        <option value="value1">Value 1</option>
-        <option value="value2" selected>Value 2</option>
-        <option value="value3">Value 3</option>
-      </select>
+    <div class="mb-4">
+        <h2 class="text-light">Audio</h2>
+        <div>
+            <p>
 
+            </p>
+        </div>
+        <audio class="w-25" controls>
+            <source src="La Vaca Lola - Canciones de La Granja de Zenón 2.ogg" type="audio/ogg">
+            <source src="La Vaca Lola - Canciones de La Granja de Zenón 2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
+    <div class="mb-4">
+        <label for="comboBox" class="form-label">Select an option:</label>
+        <select id="comboBox" class="form-select w-50">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>Value 2</option>
+            <option value="value3">Value 3</option>
+        </select>
+    </div>
 
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
